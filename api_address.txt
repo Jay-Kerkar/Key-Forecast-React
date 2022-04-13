@@ -1,0 +1,1 @@
+https://api.openweathermap.org/data/2.5/weather?q=mumbai&appid=7e6608c5b9056461bbf1f7463c1caf92
