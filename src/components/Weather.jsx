@@ -16,6 +16,9 @@ const Weather = (props) => {
         props.setProgress(50)
         const data = await weatherForecast.json()
         props.setProgress(75)
+        if (data.cod !== 200) {
+            props.configAlert(data.message, "danger")
+        }
         setForecast({
             temperature: data.main.temp,
             weather: data.weather[0].main,
